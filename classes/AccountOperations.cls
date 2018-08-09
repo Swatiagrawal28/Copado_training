@@ -1,18 +1,22 @@
 public class AccountOperations {
     public static Account setDefaultDescription(Account a) {
-        a.Description = 'Default Description';
+        a.Description = 'Default Desc';
         return a;
     }
     
     public static Account setDefaultPhone(Account  a)
     {
-       if(a.Description == 'Default Description')
+        a.phone ='12345';// conflicting
+         return a;
+    }
+    
+    public static Account setDefaultWebsite(Account  a)
+    {
+        if(a.Description == 'Default Description')
         {
-            a.phone='122';
+            a.website='www.copado.com';
            
         }
          return a;
     }
-    
-    
 }
