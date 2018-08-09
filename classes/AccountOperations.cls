@@ -6,11 +6,13 @@ public class AccountOperations {
     
     public static Account setDefaultPhone(Account  a)
     {
-        if(a.Description == 'Default Description')
+       if(a.Description == 'Default Description')
         {
-            a.phone ='12345';
+            a.phone='122';
            
         }
          return a;
     }
+    
+    
 }
